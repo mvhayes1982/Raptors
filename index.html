@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Team Roster</title>
+</head>
+<body>
+    <h1>Louisville Raptors</h1>
+
+    <form action="roster.html" method="post">
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name">
+
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name"><br>
+
+        <label for="parent_name">Parent's Name:</label>
+        <input type="text" id="parent_name" name="parent_name"><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="birthday"><br>
+
+        <label for="position">Preferred Position:</label>
+        <select id="position" name="player_position">
+            <optgroup label="Infield">
+                <option value="first_base">First Base</option>
+                <option value="second_base">Second Base</option>
+                <option value="shortstop">Shortstop</option>
+                <option value="third_base">Third Base</option>
+            </optgroup>
+            <optgroup label="Outfield">
+                <option value="left_field">Left Field</option>
+                <option value="center_field">Center Field</option>
+                <option value="right_field">Right Field</option>
+            </optgroup>
+            <optgroup label="Battery">
+                <option value="pitcher">Pitcher</option>
+                <option value="catcher">Catcher</option>
+            </optgroup>
+            
+
+
+        </select>
+
+
+
+    </form>
+</body>    
+</html>
