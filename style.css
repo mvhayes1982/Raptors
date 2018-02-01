@@ -1,0 +1,50 @@
+/* ---- Main Style Sheet ------------*/
+
+.header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 0 20px; */
+    background: radial-gradient(#00FF00 20%, #191970 80%)
+    
+}
+
+.head-img {
+    margin: 10px auto;
+    opacity: 0.7;
+    border-radius: 30% 30%;
+}
+
+.main-nav li{
+    display: block;
+    padding: 1em;
+    margin: -2px;
+    background-color: #808080;
+}
+
+li a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #191970;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+
+/* ------Media Query  ---------*/
+
+@media (min-width: 750px) {
+
+    .main-nav {
+        float: right
+    }
+
+    .main-nav li {
+        float: left;
+    }
+
+    .ul{
+        margin: 0 0;
+    }
+}
