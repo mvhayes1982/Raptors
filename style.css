@@ -1,11 +1,17 @@
 /* ---- Main Style Sheet ------------*/
+body {
+    background-color: darkgray;
+}
 
-.header {
+.wrapper {
+    background-color: #ffff;
+}
+
+#header {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     /* padding: 0 20px; */
     background: radial-gradient(#00FF00 20%, #191970 80%)
-    
 }
 
 .head-img {
@@ -14,10 +20,9 @@
     border-radius: 30% 30%;
 }
 
-.main-nav li{
-    display: block;
+.main-nav ul{
+    display: inline-block;
     padding: 1em;
-    margin: -2px;
     background-color: #808080;
 }
 
@@ -36,15 +41,35 @@ li a {
 
 @media (min-width: 750px) {
 
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        min-height: 100%;
+    }
+
+    .body {
+        margin: 0 0 100px;
+    }
+
     .main-nav {
-        float: right
+        float: right;
     }
 
     .main-nav li {
-        float: left;
+        margin-right: 2px;
+        float: left
     }
 
     .ul{
         margin: 0 0;
+    }
+
+    #footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        text-align: center;
     }
 }
